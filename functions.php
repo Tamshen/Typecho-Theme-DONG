@@ -263,12 +263,12 @@ function showThumb($obj,$size=null,$link=false){
         }
     }
     if(empty($thumb) && empty($options->default_thumb)){
-		$thumb= $options->themeUrl .'/images/thumb/' . rand(1, 20) . '.jpg';
+		$thumb= $options->themeUrl .'/images/thumb/' . rand(1, 3) . '.jpg';
 		//去掉下面4行双斜杠 启用BING美图随机缩略图
-		$str = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?format=js&idx='.rand(1, 30).'&n=1');
-        $array = json_decode($str);
-		$imgurl = $array->{"images"}[0]->{"urlbase"};
-        $thumb = '//i'.rand(0, 2).'.wp.com/cn.bing.com'.$imgurl.'_1920x1080.jpg?resize=960,540';
+		//$str = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?format=js&idx='.rand(1, 30).'&n=1');
+        //$array = json_decode($str);
+		//$imgurl = $array->{"images"}[0]->{"urlbase"};
+        //$thumb = '//i'.rand(0, 2).'.wp.com/cn.bing.com'.$imgurl.'_1920x1080.jpg?resize=960,540';
 		
         return $thumb;
     }else{

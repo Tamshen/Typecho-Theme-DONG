@@ -32,7 +32,7 @@ a:active{text-decoration:none;}
 .top{position:fixed;bottom:0;z-index:1000;line-height:0}
 .top a{padding:0;}
 /*mdui*/
-.mdui-container {max-width: 860px;}
+/*.mdui-container {max-width: 860px;}*/
 .mdui-container, .mdui-container-fluid{box-sizing: border-box;padding-right: 0px;padding-left: 0px;}
 /*1012*/
 
